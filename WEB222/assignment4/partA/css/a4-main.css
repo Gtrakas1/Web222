@@ -1,0 +1,56 @@
+/* Place all of your CSS Code in this file */
+
+/********************************************************************************* 
+*
+* WEB222 – Assignment #4a
+*
+* I declare that this assignment is my own work in accordance with Seneca 
+* Academic Policy. No part of this assignment has been copied manually or 
+* electronically from any other source (including web sites) or distributed to 
+* other students. 
+* 
+* Name: George Trakas Student ID: 109459173 Date: 3/19/2018
+* 
+********************************************************************************/
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+
+body{
+    color : #123456;
+}
+nav, footer{
+    background-color  : blue;
+}
+header{background-color:#123456;
+    text-align:justify;
+    text-decoration: midnightblue;
+}
+.app-title{
+    color: #ffffff;
+    font-size: 200%;
+    text-shadow: 1px 1px 1px #000;
+    font-family: fantasy;
+    }
+.main-table-container{
+    color: rebeccapurple;
+    max-height: 450px;
+    border: 5px solid #000;
+    overflow-y: scroll;
+    padding:1px;
+    }
+.main-table-container th{
+        text-align: left;
+        color:midnightblue;
+        font-size: 0.7em;
+        border-bottom: 1px solid black;
+    }
+.main-table-container td{
+    color: midnightblue;
+    border-top: 1px solid black;
+    padding: 20px;
+    font-size: 1.1em;
+}
+.main-table p span{
+    color: black;
+    font-size: 1.1em;
+    
+}

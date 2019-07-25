@@ -1,0 +1,117 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Registration Trakas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="normalize1.css" />
+    <script src="registration.js"></script>
+</head>
+<body class="content">
+    <header >
+            <h1>| Hockey Fantasy league |</h1>
+        <div id="logo"> 
+            <img class="flag" src="images/Nhl.png" alt="NHL"> Nhl</div>
+    </header>
+    <br>
+    <nav>
+        <div class="menu">
+            <h2>Welcome</h2>
+            <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="registration.html">Registration</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="center">
+        <div id="form">
+            <h3>Think you can win? Sign up to join.</h3>
+            <form name="signup" action="https://httpbin.org/post" method="post" onsubmit="return Validate()" >
+            <div>
+            <label for="fname">FirstName:</label>
+            <input type="text" id="fname" pattern="[A-Za-z\s]*"  required>
+            </div> 
+            <div>
+                <label for="lname">LastName:</label>
+                <input type="text" id="lname" pattern="[A-Za-z\s]*"  required/>
+            </div> 
+           <fieldset>
+         <legend>Shipping Address</legend>
+            <div>
+                <label for="unit">Unit#:</label>
+                <input type="text" id="unit" pattern=".*[0-9]" title="Ex:123" required/>
+            </div> 
+            <div>
+                <label for="street">Street#:</label>
+                <input type="text" id="street" pattern=".*[0-9]" title="Ex:123" required/>
+            </div> 
+            <div>
+                <label for="strn">Street Name:</label>
+                <input type="text" id="strn" pattern="[A-Za-z\s]*" title="Abcdswd" required/>
+            </div> 
+            <div>
+                <label for="city">City:</label>
+                <input type="text" id="city" pattern="[A-Za-z\s]*" title="Abcdswd" required/>
+            </div> 
+            <div>
+              <label for="provinces"> Province:</label> 
+              <select name="provinces" id="provinces">
+                <option value="1">Labrador</option>
+                <option value="2">New Brunswick</option>
+                <option value="3">Nova Scotia</option>
+                <option value="4">Quebec</option>
+                <option value="5" selected>Ontario</option>
+                <option value="6">Manitoba</option>
+                <option value="7">Saskatchewan</option>
+                <option value="8">Alberta</option>
+                <option value="9">British Columbia</option>
+                <option value="10">Nunavut</option>
+              </select>
+            </div>   
+            <div>
+                <label for="pst">PostalCode:</label>
+                <input type="text" id="pst" pattern="[A-Z][1-9][A-Z][1-9][A-Z][1-9]" title="Ex:M2Z4V3" required/> 
+            
+            </div>
+            </fieldset>
+            <div>
+                <label for="phone">Phone#:</label>
+                <input type="tel" name="ssn" id="phone" pattern="^\d{3}-\d{3}-\d{4}$" title="Ex: ###-###-####" required/>
+            </div> 
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" title="myemail@email.com" required/>
+            </div> 
+            <div> 
+                <label for="user">UserName:</label>
+                <input type="text" id="user" onchange="Usernamecheck()" required pattern="[A-Za-z\s]*"/>
+            </div> 
+            <div>
+                <label for="psw">password:</label>
+                <input type="password" name="psw" onchange="FilterPwdCheck()" required/>
+            </div> 
+            <div class="repss">
+                <label for="repass">Retype Password:</label>
+                <input type="password" id="repass" onchange="FilterPwdCheck()" required/>
+            </div> 
+                <div class="button">
+                <button type="submit" >Submit</button>  
+                </div> 
+            <div class="button">
+            <button type="reset">Clear</button>    
+            </div> 
+            <div><input type="hidden" name="Trakas" id="Trakas" value="Trakas" />
+                <input type="hidden" name="108459173" id="108459173" value="108459173"/>
+            </div>
+        </form>
+        
+    </div>
+    </section>
+    <div class="center">
+    <footer id="footer">
+        &copy; George Trakas 2017
+    </footer>
+</div>
+</body>
+</html>

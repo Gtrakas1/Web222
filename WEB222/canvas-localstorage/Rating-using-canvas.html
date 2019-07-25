@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div id="di" style="color:#0000FF">
+  
+  
+</div> 
+<canvas id="myCanvas" width="200" height="15"
+style="border:1px solid #c3c3c3;">
+Your browser does not support the HTML5 canvas tag.
+</canvas>
+
+<form action="">
+<input type="radio" name="rate" value="one" onclick="planeChoice(1)"/>One<br>
+<input type="radio" name="rate" value="two" onclick="planeChoice(2)"/>Two<br/><br/>
+ <textarea id="d" rows="4" cols="50">
+Write review here.....
+</textarea> 
+<br/>
+ 
+</form>
+<script>
+function planeChoice (plane) {
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+  switch (plane) {
+    case 1: 
+      ctx.fillStyle = "#FFFFFF";
+	  ctx.clearRect(0,0,0,15);
+      ctx.fillRect(0,0,200,15);
+	  ctx.fillStyle = "#FF0000";
+	  ctx.fillRect(0,0,100,15);
+	  
+      break;
+    case 2: 
+      ctx.fillStyle = "#FF0000";
+      ctx.fillRect(0,0,200,15);
+      break; 
+    default:
+      alert("not yet selected");
+      break;
+  }
+ 
+}
+</script>
+</body>
+</html>
+

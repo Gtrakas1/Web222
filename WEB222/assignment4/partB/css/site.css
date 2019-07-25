@@ -1,0 +1,96 @@
+/* choose all elements to .main-container.Width and margin*/
+.main-container{
+    max-width: 960px;
+    margin: auto auto;
+}
+/* choose all elements to nav that is a childe to .main-container.Change size and position*/
+.main-container nav{
+    width: 30%;
+    float: left;
+}
+/* choose elements to main class which is the child to .main-container.Change width and float*/
+.main-container .main{
+    width: 70%;
+    float: right;
+}
+/* choose elements to header which is the child to .main-container.change padding
+border-bottom and margin-bottom*/
+.main-container header{
+    padding: 10px;
+    background-color:#eeeeee;
+    border-bottom: 1px solid #cccccc ;
+    margin-bottom: 30px;
+}
+/*  choose elements to h1 that comes from parent .main-container/header.
+Change width,font-size,float,text-align,margin-top*/
+.main-container header h1{
+    width: 70%;
+    font-size: 24px;
+    float: right;
+    text-align: right;
+    margin-top: 10px;
+}
+/* Choose all elements to footer that is a child from .main-container.
+Change clear,padding,background-color,border-top and font-size*/
+.main-container footer{
+    clear: both;
+    padding: 20px 10px;
+    background-color: #eeeeee;
+    border-top: 1px solid #cccccc;
+    font-size: 13px;
+}
+/* Choose id logo and change the width,font-size and font-weight*/
+#logo{
+    width: 30%;
+    font-size: 25px;
+    font-weight: bold;
+    }
+    /* Choose img which is a nested from id logo.
+    Change width and vertical-align*/
+#logo img{
+    width: 94px;
+    vertical-align: middle;
+    }
+    /*choose the ul element which is listed in nav and remove bullets */
+nav ul{
+    list-style-type: none;
+}
+/* choose the element a that is nested within ul inside nav to display the box of as a 
+block and remove text-decoration*/
+nav ul a{
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+}
+/* choose province nested in div and change the size,position,
+and margin*/
+div.province{
+    width: 30%;
+    float: left;
+    margin: 8px;
+    height: 310px;
+
+}
+/* choose description that is nested to province and add a scroll after max-width: height
+hide the horizontal scroll and make a top bottom margin 8px*/
+div.province .description{
+    max-height: 165px;
+    overflow-y: auto; 
+    overflow-x: hidden;
+    margin: 8px auto;
+}
+/* choose a nested in province to change properties display,text-align, background-color,
+color,text-decoration and padding*/
+div.province a{
+    display: block;
+    text-align: center;
+    background-color: #555555;
+    color: #eeeeee;
+    text-decoration: none;
+    padding: 5px;
+
+}
+/* Set the class flag within img element and change propety width to 100%*/
+img.flag{
+    width: 100%;
+}
